@@ -14,4 +14,6 @@
 # limitations under the License.
 #
 
-add_lunch_combo aosp_taimen-userdebug
+add_lunch_combo aosp_nb1-user
+add_lunch_combo aosp_nb1-userdebug
+add_lunch_combo aosp_nb1-eng

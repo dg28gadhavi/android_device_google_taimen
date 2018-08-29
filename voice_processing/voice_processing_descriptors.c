@@ -31,7 +31,7 @@ const effect_descriptor_t qcom_product_aec_descriptor = {
         0,
         0,
         "Acoustic Echo Canceler",
-        "Qualcomm Fluence for Taimen"
+        "Qualcomm Fluence for NB1"
 };
 
 // Noise suppression b43988c2-1fb9-11e7-93ae-92361f002671
@@ -43,5 +43,5 @@ const effect_descriptor_t qcom_product_ns_descriptor = {
         0,
         0,
         "Noise Suppression",
-        "Qualcomm Fluence for Taimen"
+        "Qualcomm Fluence for NB1"
 };

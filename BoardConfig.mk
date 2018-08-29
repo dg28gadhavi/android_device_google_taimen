@@ -14,18 +14,15 @@
 # limitations under the License.
 #
 
-TARGET_BOOTLOADER_BOARD_NAME := taimen
+TARGET_BOOTLOADER_BOARD_NAME := nb1
 DEFAULT_LOW_PERSISTENCE_MODE_BRIGHTNESS := 0x0000008c
 
 BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200,n8 earlycon=msm_serial_dm,0xc1b0000
-
-include device/google/wahoo/BoardConfig.mk
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 41943040
 BOARD_AVB_ENABLE := false
 BOARD_BUILD_DISABLED_VBMETAIMAGE := true
 
 # sepolicy
-BOARD_SEPOLICY_DIRS += device/google/taimen/sepolicy
+BOARD_SEPOLICY_DIRS += device/nokia/nb1/sepolicy
 
--include vendor/google_devices/taimen/proprietary/BoardConfigVendor.mk

@@ -14,4 +14,3 @@
 # limitations under the License.
 #
 
--include vendor/google_devices/taimen/proprietary/AndroidBoardVendor.mk

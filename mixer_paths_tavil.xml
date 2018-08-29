@@ -1571,7 +1571,7 @@
         <ctl name="DEC7 Volume" value="100" />
     </path>
 
-    <!-- FluenceProv2 voice call SPK for taimen -->
+    <!-- FluenceProv2 voice call SPK for nb1 -->
     <path name="voice-speaker-tmic">
         <path name="triple-mic" />
         <ctl name="DEC5 Volume" value="100" />
@@ -1579,7 +1579,7 @@
         <ctl name="DEC7 Volume" value="100" />
     </path>
 
-    <!-- FluenceProv2 voice call SPK for taimen -->
+    <!-- FluenceProv2 voice call SPK for nb1 -->
     <path name="voice-speaker-qmic">
         <path name="triple-mic" />
         <ctl name="DEC5 Volume" value="100" />
@@ -2223,28 +2223,28 @@
         <ctl name="DEC6 Volume" value="90" />
     </path>
 
-<!-- taimen factory -->
-    <path name="mictest-taimen-mic1">
+<!-- nb1 factory -->
+    <path name="mictest-nb1-mic1">
         <path name="dmic1" />
         <ctl name="DEC7 Volume" value="84" />
     </path>
 
-    <path name="mictest-taimen-mic2">
+    <path name="mictest-nb1-mic2">
         <path name="dmic3" />
         <ctl name="DEC5 Volume" value="84" />
     </path>
 
-    <path name="mictest-taimen-mic3">
+    <path name="mictest-nb1-mic3">
         <path name="dmic5" />
         <ctl name="DEC6 Volume" value="84" />
     </path>
 
-    <path name="mictest-taimen-spk1">
+    <path name="mictest-nb1-spk1">
 		<ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
 		<ctl name="Stereo Configuration" value="1" />
     </path>
 
-    <path name="mictest-taimen-spk2">
+    <path name="mictest-nb1-spk2">
 		<ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
 		<ctl name="Stereo Configuration" value="2" />
     </path>
