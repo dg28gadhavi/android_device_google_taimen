@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 
 $(call inherit-product, device/nokia/nb1/device.mk)
-$(call inherit-product-if-exists, vendor/google_devices/taimen/proprietary/device-vendor.mk)
+$(call inherit-product-if-exists,vendor/nokia/nb1/proprietary/device-vendor.mk)
 
 PRODUCT_PACKAGES += \
     Dialer \
@@ -29,10 +29,9 @@ PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
 PRODUCT_COPY_FILES += \
-    device/nokia/nb1/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
-    frameworks/native/data/etc/aosp_excluded_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/aosp_excluded_hardware.xml
+    device/nokia/nb1/audio_effects.xml:system/etc/audio_effects.xml \
+    frameworks/native/data/etc/aosp_excluded_hardware.xml:system/etc/permissions/aosp_excluded_hardware.xml
 
-PRODUCT_RESTRICT_VENDOR_FILES := owner
 
 PRODUCT_MANUFACTURER := Google
 PRODUCT_BRAND := Android

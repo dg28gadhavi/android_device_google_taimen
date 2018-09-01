@@ -30,32 +30,32 @@ DEVICE_PACKAGE_OVERLAYS += device/nokia/nb1/overlay
 
 # Audio
 PRODUCT_COPY_FILES += \
-    device/nokia/nb1/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
-    device/nokia/nb1/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml
+    device/nokia/nb1/default_volume_tables.xml:system/etc/default_volume_tables.xml \
+    device/nokia/nb1/audio_policy_volumes.xml:$system/etc/audio_policy_volumes.xml
 
 PRODUCT_COPY_FILES += \
-    device/nokia/nb1/init-nb1.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init-$(PRODUCT_HARDWARE).rc \
-    device/nokia/nb1/init.nb1.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.$(PRODUCT_HARDWARE).usb.rc
+    device/nokia/nb1/init-nb1.rc:$system/etc/init/init-$(PRODUCT_HARDWARE).rc \
+    device/nokia/nb1/init.nb1.usb.rc:$system/etc/init/hw/init.$(PRODUCT_HARDWARE).usb.rc
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=560 \
 
 # Logging
 PRODUCT_COPY_FILES += \
-    device/nokia/nb1/init.logging.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.$(PRODUCT_HARDWARE).logging.rc
+    device/nokia/nb1/init.logging.rc:$system/etc/init/init.$(PRODUCT_HARDWARE).logging.rc
 
 
 PRODUCT_COPY_FILES += \
-    device/nokia/nb1/nfc/libnfc-nxp.nb1.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
+    device/nokia/nb1/nfc/libnfc-nxp.nb1.conf:$system/etc/libnfc-nxp.conf
 
 PRODUCT_COPY_FILES += \
-    device/nokia/nb1/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
-    device/nokia/nb1/thermal-engine-vr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-vr.conf
+    device/nokia/nb1/thermal-engine.conf:$system/etc/thermal-engine.conf \
+    device/nokia/nb1/thermal-engine-vr.conf:$system/etc/thermal-engine-vr.conf
 
 # Audio
 PRODUCT_COPY_FILES += \
-    device/nokia/nb1/mixer_paths_tavil.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tavil_taimen.xml \
-    device/nokia/nb1/audio_platform_info_tavil.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_tavil_taimen.xml
+    device/nokia/nb1/mixer_paths_tavil.xml:$system/etc/mixer_paths_tavil_taimen.xml \
+    device/nokia/nb1/audio_platform_info_tavil.xml:$system/etc/audio_platform_info_tavil_taimen.xml
 
 # Bug 62375603
 PRODUCT_PROPERTY_OVERRIDES += audio.adm.buffering.ms=3
@@ -68,7 +68,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += esim.enable_esim_system_ui_by_default=false
 
 # Pro audio feature
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.audio.pro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.pro.xml
+    frameworks/native/data/etc/android.hardware.audio.pro.xml:$system/etc/permissions/android.hardware.audio.pro.xml
 
 # Enable AAudio MMAP/NOIRQ data path.
 # 1 is AAUDIO_POLICY_NEVER  means only use Legacy path.
@@ -89,11 +89,11 @@ PRODUCT_PROPERTY_OVERRIDES += aaudio.hw_burst_min_usec=2000
 
 # Wifi configuration file
 PRODUCT_COPY_FILES += \
-    device/nokia/nb1/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
+    device/nokia/nb1/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
 
 # Keymaster configuration
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml
+    frameworks/native/data/etc/android.software.device_id_attestation.xml:system/etc/permissions/android.software.device_id_attestation.xml
 
 # Enable modem logging
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
